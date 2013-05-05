@@ -1341,6 +1341,14 @@ config MSM_SDIO_SMEM
 	  memory. Used by remote storage client to shadow
 	  MDM9K filesystem.
 
+config MSM_MPDEC
+    	bool "Enable kernel based mpdecision"
+    	depends on MSM_SMP
+    	default n
+    	help
+    	  This enables kernel based multi core control.
+    	  (up/down hotplug based on load) 
+
 config MSM_DALRPC
 	bool "DAL RPC support"
 	default n

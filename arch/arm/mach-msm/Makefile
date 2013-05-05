@@ -24,6 +24,7 @@ endif
 
 obj-y += io.o dma.o memory.o
 ifndef CONFIG_ARM_ARCH_TIMER
+obj-$(CONFIG_MSM_MPDEC)      += msm_mpdecision.o
 obj-y += timer.o
 endif
 obj-y += clock.o clock-voter.o clock-dummy.o
