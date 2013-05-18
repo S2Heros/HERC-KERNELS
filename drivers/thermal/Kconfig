@@ -69,12 +69,7 @@ config THERMAL_PM8XXX
 
 config THERMAL_MONITOR
 	bool "Monitor thermal state and limit CPU Frequency"
-<<<<<<< HEAD
 	depends on THERMAL_TSENS8x60
-=======
-	depends on THERMAL_TSENS8960
-	depends on CPU_FREQ_MSM
->>>>>>> cm-10.1
 	default n
 	help
 	  This enables thermal monitoring capability in the kernel in the
